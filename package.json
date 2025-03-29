@@ -1,0 +1,33 @@
+{
+  "name": "soundex-fuzzy-search",
+  "version": "1.0.0",
+  "description": "Convert string into Soundex code",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anubhav-Ghosh1/Soundex-Fuzzy-Search.git"
+  },
+  "keywords": [
+    "soundex",
+    "fuzzy",
+    "search",
+    "string-matching",
+    "phonetic-algorithm"
+  ],
+  "author": "Anubhav Ghosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anubhav-Ghosh1/Soundex-Fuzzy-Search/issues"
+  },
+  "homepage": "https://github.com/Anubhav-Ghosh1/Soundex-Fuzzy-Search#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "typescript": "^5.8.2"
+  }
+}
