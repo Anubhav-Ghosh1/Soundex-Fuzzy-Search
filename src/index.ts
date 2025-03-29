@@ -1,4 +1,4 @@
-const soundex_code = async (string: String) => {
+export const soundex_code = (string: string) => {
   const soundexTable: Record<string, string> = {
     A: "",
     E: "",
@@ -41,12 +41,10 @@ const soundex_code = async (string: String) => {
     const currentCode = soundexTable[currentLetter];
     const previousCode = soundexTable[str.charAt(i - 1)];
 
-    if (currentCode !== previousCode) {
+    if (currentCode && currentCode !== previousCode) {
       encodedString += currentCode;
     }
   }
 
   return encodedString.padEnd(4, "0").slice(0, 4);
 };
-
-export default soundex_code;
